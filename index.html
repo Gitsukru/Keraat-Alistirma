@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keraat Alistirma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./Css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <fieldset>
+                <legend>Genel Ayarlar</legend>
+                <input id="Isim" name="name" value="Sukru" placeholder="Çocugun ismi" />
+                <input id="toplamAlistirmaSayisi" name="toplamAlistirmaSayisi" value="30" placeholder="Toplam Aliştirma Sayisi" />
+                <input id="tekAlistirmaSuresi" name="tekAlistirmaSuresi" value="2" placeholder="Tek Aliştirma Suresi" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Birinci Carpan</legend>
+                <input id="BC_min" name="BC_min" value="2" placeholder="Minimum Değer" />
+                <input id="BC_max" name="BC_max" value="5" placeholder="Maximum Değer" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Ikinci Carpan</legend>
+                <input id="IC_min" name="IC_min" value="3" placeholder="Minimum Değer" />
+                <input id="IC_max" name="IC_max" value="6" placeholder="Maximum Değer" />
+            </fieldset>
+
+            <div class="timeArea">
+                <time></time>
+            </div>
+
+            <dialog id="sonuc_modal">
+                <fieldset>
+                    <legend>Rapor</legend>
+                    <div id="current_result">
+
+                        <table>
+
+
+
+                        </table>
+
+                    </div>
+                </fieldset>
+            </dialog>
+
+            <div class="butonArea">
+                <button class="baslat">Başlat</button>
+                <button class="bitir">Bitir</button>
+                <button class="GenelRapor">Genel Rapor</button>
+            </div>
+
+            <fieldset class="rapor">
+                <legend>Rapor</legend>
+            </fieldset>
+
+        </nav>
+        <section class="alistirma_container">
+            <div>
+                <label>1</label>
+                <input id="alistirtma_1" />
+            </div>
+        </section>
+    </main>
+
+    <script src="./Script/model.js"></script>
+    <script src="./Script/alistirma.js"></script>
+    <script src="./Script/rapor.js"></script>
+    <script src="./Script/controller.js"></script>
+</body>
+
+</html>
